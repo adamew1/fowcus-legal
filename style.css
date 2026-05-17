@@ -1,0 +1,200 @@
+:root {
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --border: #e7e5e4;
+  --text: #1c1917;
+  --text-muted: #57534e;
+  --accent: #4F8EFF;
+  --radius: 12px;
+  --max-width: 720px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+    system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+header.site .brand {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+header.site nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 20px;
+  transition: color 0.15s ease;
+}
+
+header.site nav a:hover {
+  color: var(--text);
+}
+
+header.site nav a.active {
+  color: var(--text);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.effective-date {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 0 0 48px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 40px 0 12px;
+  color: var(--text);
+}
+
+h2:first-of-type {
+  margin-top: 0;
+}
+
+p {
+  margin: 0 0 16px;
+  color: var(--text);
+}
+
+ul {
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+footer.site {
+  margin-top: 96px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer.site a {
+  color: var(--text-muted);
+}
+
+/* Landing page */
+.landing {
+  text-align: center;
+  padding-top: 96px;
+}
+
+.landing h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.landing .lede {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-bottom: 48px;
+}
+
+.landing .links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.landing .links a {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+.landing .links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 32px 20px 64px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .landing h1 {
+    font-size: 36px;
+  }
+  header.site nav a {
+    margin-left: 12px;
+  }
+}

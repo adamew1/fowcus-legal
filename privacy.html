@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>Privacy Policy — FOWCUS</title>
+  <meta name="description" content="The FOWCUS Privacy Policy describes what data the app collects, how it is used, and your rights." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a href="index.html" class="brand">FOWCUS</a>
+      <nav>
+        <a href="privacy.html" class="active">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective May 12, 2026</p>
+
+    <h2>Summary</h2>
+    <p>
+      FOWCUS is a personal focus tool. We collect the minimum data needed to
+      make the app work. We do not sell or rent your data, and we do not show
+      you ads. We do not use your data for advertising, marketing, or
+      use-based data mining.
+    </p>
+
+    <h2>What we collect</h2>
+    <ul>
+      <li>
+        Your Apple ID identifier (returned by Sign in with Apple). If you
+        choose to share your email, we store it so you can recover your
+        account.
+      </li>
+      <li>
+        Your FOWCUS settings: the opaque token your device returns from
+        Apple's Family Activity Picker, your daily goal, challenge
+        difficulty, and optional always-block schedules.
+      </li>
+      <li>
+        A log of your focus sessions and challenge attempts (start time,
+        duration, completion, whether you walked away) so we can show your
+        streak and weekly recap.
+      </li>
+      <li>
+        Your subscription status, retrieved from RevenueCat using your
+        anonymous identifier.
+      </li>
+    </ul>
+
+    <h2>What we do NOT collect</h2>
+    <ul>
+      <li>
+        The names of the apps you block. iOS gives FOWCUS an opaque
+        identifier (a "token") for each app you pick. The token is not a
+        name, a bundle ID, or anything we can decode back into an app name.
+      </li>
+      <li>
+        Usage of the apps you block. We never see when, how often, or for
+        how long you use Instagram, TikTok, or any other app — iOS does not
+        expose that to FOWCUS.
+      </li>
+      <li>
+        Your contacts, photos, location, microphone, or browsing history.
+      </li>
+      <li>
+        Advertising or tracking identifiers. We do not use the App Tracking
+        Transparency framework because we do not track you across other apps
+        or websites.
+      </li>
+    </ul>
+
+    <h2>Camera</h2>
+    <p>
+      The breathing exercise can optionally show your face on screen during
+      the 20-second breathing portion of the unlock challenge. The camera
+      feed is rendered locally on your device and is never recorded,
+      transmitted, or stored. If you deny camera access, the breathing
+      exercise still works — you just see the breathing circle alone.
+    </p>
+
+    <h2>Where data is stored</h2>
+    <ul>
+      <li>
+        On your device, in iOS-managed storage and in a shared App Group
+        accessible to FOWCUS and its DeviceActivityMonitor extension.
+      </li>
+      <li>
+        On our server, hosted by Supabase (Postgres) in encrypted form,
+        protected by row-level security policies so only you can read your
+        own rows.
+      </li>
+      <li>
+        Subscription state is managed by RevenueCat and Apple's App Store.
+      </li>
+    </ul>
+
+    <h2>How we use the data</h2>
+    <p>
+      We use the data only to operate FOWCUS: to keep the shield in sync, to
+      compute your streak, to show your stats, to fire notifications you ask
+      for, and to gate access to the app behind your subscription. We do not
+      use Family Controls / Screen Time data for advertising, marketing, or
+      use-based data mining, as required by Apple's developer agreement.
+    </p>
+
+    <h2>Sharing</h2>
+    <p>
+      We do not sell your data. We share data only with the following service
+      providers, who act on our behalf to deliver the app:
+    </p>
+    <ul>
+      <li>Apple — Sign in with Apple, App Store, Family Controls APIs.</li>
+      <li>Supabase — authentication and database hosting.</li>
+      <li>RevenueCat — subscription receipt validation.</li>
+    </ul>
+
+    <h2>Your rights</h2>
+    <p>
+      You can delete your account at any time from Settings → Account →
+      Delete account. Your account is scheduled for permanent deletion 30
+      days after the request; signing back in within that window cancels the
+      deletion. After 30 days, every row tied to your account is removed
+      from our database. Deleting your account does not cancel your App
+      Store subscription — manage that in the App Store under Settings →
+      Apple ID → Subscriptions.
+    </p>
+    <p>
+      To request a copy of your data or to ask any privacy question, email
+      <a href="mailto:privacy@fowcus.app">privacy@fowcus.app</a>.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      FOWCUS is not directed at children under 13. We do not knowingly
+      collect data from children. The Family Controls authorization scope
+      FOWCUS requests is the adult <code>.individual</code> scope, never the
+      parental <code>.child</code> scope.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      If we change this policy, we will update the effective date above and
+      surface the new version in the app the next time you open it.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:privacy@fowcus.app">privacy@fowcus.app</a>
+    </p>
+
+    <footer class="site">
+      <span>&copy; 2026 FOWCUS</span>
+      <span>
+        <a href="terms.html">Terms of Service</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>
